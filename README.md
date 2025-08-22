@@ -71,7 +71,20 @@ void TaskLED1(void)
 <br />
 
 ## Lista de practicas desarrolladas con Microcontrolador
-
+### - TP1 - Control y Destello de Luces [PIC/AVR]
+__ENUNCIADO__
+Considerando el circuito que se muestra en el esquema inferior, elaborar un programa para el control de trafico vehicular de dos fases considerando una entrada para el modo de mantenimiento o alerta de funcionamiento. El programa debe ajustarse a los siguientes valores: 
+Operacion en modo normal:
+1. Led B0 se activa al presionar el pulsador C0 
+2. Led B1 se activa al presionar el pulsador C1
+3. Leds D0:D3 se activan con el dip-switch B4:B7
+Operacion en modo mantenimiento:
+1. Luz amarilla intermitente a 4Hz.
+<br />
+<p align="left">
+  <img src="/images/tp01sch.png"></img>
+</p>
+<br />
 Autor: Pablo Zarate, puedes contactarme a pablinza@me.com / pablinzte@gmail.com.  <br />
 Visita mi Blog  [Blog de Contenidos](https://pablinza.blogspot.com/). <br />
 Visita mi Canal [Blog de Contenidos](http://www.youtube.com/@pablozarate7524). <br />
