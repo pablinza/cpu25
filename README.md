@@ -72,8 +72,7 @@ void TaskLED1(void)
 
 ## Lista de practicas desarrolladas con Microcontrolador
 ### - TP1 - Control y Destello de Luces [PIC/AVR]
-__ENUNCIADO__
-Considerando el circuito que se muestra en el esquema inferior, elaborar un programa para el control de trafico vehicular de dos fases considerando una entrada para el modo de mantenimiento o alerta de funcionamiento. El programa debe ajustarse a los siguientes valores: <br />
+__ENUNCIADO:__ Considerando el circuito que se muestra en el esquema inferior, elaborar un programa para el control de trafico vehicular de dos fases considerando una entrada para el modo de mantenimiento o alerta de funcionamiento. El programa debe ajustarse a los siguientes valores: <br />
 <ins>Operacion en modo normal<ins />: 
 1. Tiempo de Luz Roja (Pare) de 30 segundos 
 2. Tiempo de luz Verde (Avance) de 25 segundos
