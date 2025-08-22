@@ -74,11 +74,12 @@ void TaskLED1(void)
 ### - TP1 - Control y Destello de Luces [PIC/AVR]
 __ENUNCIADO__
 Considerando el circuito que se muestra en el esquema inferior, elaborar un programa para el control de trafico vehicular de dos fases considerando una entrada para el modo de mantenimiento o alerta de funcionamiento. El programa debe ajustarse a los siguientes valores: <br />
-<u>Operacion en modo normal</u>: <br />
+<ins>Operacion en modo normal<ins />: 
 1. Tiempo de Luz Roja (Pare) de 30 segundos 
 2. Tiempo de luz Verde (Avance) de 25 segundos
-3. Tiempo de luz Amarilla de 5 segundos<br />
-<u>Operacion en modo mantenimiento: </u><br />
+3. Tiempo de luz Amarilla de 5 segundos <br />
+
+<ins>Operacion en modo mantenimiento: <ins /><br />
 1. Luz amarilla intermitente a 4Hz. <br />
 <p align="left">
   <img src="/images/tp01sch.png"></img>
