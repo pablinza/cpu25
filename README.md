@@ -75,9 +75,9 @@ void TaskLED1(void)
 __ENUNCIADO__
 Considerando el circuito que se muestra en el esquema inferior, elaborar un programa para el control de trafico vehicular de dos fases considerando una entrada para el modo de mantenimiento o alerta de funcionamiento. El programa debe ajustarse a los siguientes valores: <br />
 <u>Operacion en modo normal</u>: <br />
-1. Led B0 se activa al presionar el pulsador C0 
-2. Led B1 se activa al presionar el pulsador C1
-3. Leds D0:D3 se activan con el dip-switch B4:B7
+1. Tiempo de Luz Roja (Pare) de 30 segundos 
+2. Tiempo de luz Verde (Avance) de 25 segundos
+3. Tiempo de luz Amarilla de 5 segundos<br />
 <u>Operacion en modo mantenimiento: </u><br />
 1. Luz amarilla intermitente a 4Hz. <br />
 <p align="left">
