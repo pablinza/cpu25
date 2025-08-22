@@ -6,8 +6,9 @@ El compilador __XC8__ puedes descargalo utilizando este enlace [ --> Click](http
 Para cargar el firmware al microcontrolador necesitaras un programador ICSP, como alternativa se utiliza el software __SimulIDE__ [ -->Click](https://simulide.com/p/) a efectos de verificar el funcionamiento <br />
 Cada carpeta del proyecto MPLABX tiene el nombre precedido por el numero de actividad y en su estructura encontrara el programa principal con el nombre __main.c__ y librerias de uso local, una vez compilado el codigo se genera el firmware archivo __.hex__ en la carpeta dist/default/production. <br />
 
-Programa base(PIC16F68x) __main.c__ para destellar un LED y que se utilizara en todas las practicas de este repositorio.
+Programa base(PIC16F) __main.c__ para destellar un LED y que se utilizara en todas las practicas de este repositorio.
 ```c
+//Ejemplo para Microcontrolador PIC16F687
 #pragma config FOSC=INTRCIO, WDTE=OFF
 #include <xc.h>
 #define LED1pin PORTAbits.RA5
