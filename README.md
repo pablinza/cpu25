@@ -1,4 +1,4 @@
-# Microproccsadores con base PIC/AVR pablinza@me.com
+# Microprocesadores con base PIC/AVR pablinza@me.com
 Programacion del Microprocesador en lenguaje C con el compilador oficial de Microchip __XC8__ <br />
 Repositorio con las carpetas de ejercicios desarrolados durante el curso de Microprocesadores 2025 de la UEB <br />
 El software __MPLABX__ disponible en la pagina del fabricante Microchip [ --> Click](https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/SoftwareTools/MPLABX-v6.20-windows-installer.exe?authuser=0) <br />
