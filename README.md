@@ -65,7 +65,6 @@ void TaskLED1(void)
     if(cnt == 200) LED1pin = 0; 
 }
 ```
-<br />
 Programa base(Arduino UNO) __main.ino__ para destellar el LED interno (pin PB5).
 ```c
 //Ejemplo para ATMega328 placa Arduino UNO
