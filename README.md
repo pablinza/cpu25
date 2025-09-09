@@ -6,16 +6,13 @@ El compilador __XC8__ puedes descargalo utilizando este enlace [ --> Click](http
 Para cargar el firmware al microcontrolador necesitaras un programador ICSP, como alternativa se utiliza el software __SimulIDE__ [ -->Click](https://simulide.com/p/) a efectos de verificar el funcionamiento <br />
 Cada carpeta del proyecto MPLABX tiene el nombre precedido por el numero de actividad y en su estructura encontrara el programa principal con el nombre __main.c__ y librerias de uso local, una vez compilado el codigo se genera el firmware archivo __.hex__ en la carpeta dist/default/production. <br />
 
-Programa base(PIC16F) __main.c__ para destellar un LED y que se utilizara en todas las practicas de este repositorio.
+Programa base(PIC16F) __main.c__ para destellar un LED (pin RA5)
 ```c
 //Ejemplo para Microcontrolador PIC16F687
 #pragma config FOSC=INTRCIO, WDTE=OFF
 #include <xc.h>
 #define LED1pin PORTAbits.RA5
-#define SW1pin PORTBbits.RB4
-
 volatile __bit tickms;
-
 void SetupMCU(void); //Configuracion del MCU
 void TaskLED1(void); //Destello de led 
 
@@ -69,6 +66,49 @@ void TaskLED1(void)
 }
 ```
 <br />
+Programa base(Arduino UNO) __main.ino__ para destellar el LED interno (pin PB5).
+```c
+//Ejemplo para ATMega328 placa Arduino UNO
+#define LED1pin 13
+uint32_t time0 = 0, time1;
+bool tickms;
+void TaskLED1(void);
+void setup() 
+{
+  // put your setup code here, to run once:
+  pinMode(LED1pin, OUTPUT);
+}
+
+void loop() 
+{
+  /*Configuracion del Tiempo base*/
+  time1=micros();
+  if((time1-time0) >= 1000)
+  {
+    tickms = 1;
+    time0 = time1;
+  }
+  /*Fin configuracion Tiempo base*/
+  if(tickms)
+  {
+    tickms = 0;
+    TaskLED1();
+  }
+}
+
+void TaskLED1(void)
+{
+  static uint16_t cnt = 0;
+    if(++cnt > 999) 
+    {
+        cnt = 0;
+        digitalWrite(LED1pin, 1);
+    }
+    if(cnt == 200) digitalWrite(LED1pin, 0);
+}
+```
+<br />
+
 
 ## Lista de practicas desarrolladas con Microcontrolador
 ### - TP1 - Control y Destello de Luces [PIC/AVR]
